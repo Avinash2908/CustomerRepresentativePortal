@@ -1,0 +1,56 @@
+b, label, input {
+    margin: 10px;
+}
+
+.sectionClass {
+margin: 0 20%;
+}
+
+.header {
+    background-color: lightgrey;
+    height: 220px;
+    margin:20px;
+}
+
+.header .headers-header {
+    background-color: skyblue;
+    text-align: center;
+}
+
+.header .header-content {
+    margin: 0 20%;
+}
+
+.content{
+    margin:50px;
+}
+
+.button {
+    height: 25px;
+    margin: 10px 30px;
+    background-color: darkblue;
+    color: white;
+}
+
+.tableClass{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.tableClass th {
+    background-color: skyblue;
+}
+
+.tableClass tr {
+    background-color: lightgrey;
+}
+
+.tableClass th,.tableClass tr td {
+    width:33%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}

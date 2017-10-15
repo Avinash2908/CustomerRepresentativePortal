@@ -1,0 +1,64 @@
+<div style="text-align:center">
+  <h1>
+    Customer Service Portal
+  </h1>
+</div>
+
+
+<section class="sectionClass">
+  <div class="header">
+    <div class="headers-header">
+      <h2>Filters</h2>
+    </div>
+    <div class="header-content">
+      <form>
+        <div>
+          <b>Customer Representative Name:</b>
+          <div>
+              <input type="text" style="width:300px;left:250px;" placeholder="Enter Customer Representative Name here" [(ngModel)]="filters.name"
+              maxlength="50" minlength="5" name="name" #name="ngModel">
+          </div>
+          <div *ngIf="name.errors && (name.dirty || name.touched)" class="error">
+            <div [hidden]="!name.errors.minlength">Name must be atleast 5 characters long.</div>
+            <div [hidden]="!name.errors.maxlength">Name must not exceed 50 characters long.</div>
+          </div>
+        </div>
+        <div>
+          <b>Location:</b>
+          <div>
+              <label style="left:250px;" *ngFor="let location of locations">
+                  <input type="checkbox" [(ngModel)]="filters.locations[location]" name="locations" value="location"> {{location}}
+              </label>
+          </div>
+         
+        </div>
+      </form>
+    </div>
+    <div>
+        <input class="button" style="float:left" type="button" value="Reset" (click)="reset()">    
+        <input class="button" style="float:right" type="button" value="Search" (click)="filterData()">
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 style="text-align:center">Representative Details</h2>
+    <table class=tableClass>
+      <thead>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let representative of filteredData">
+          <td>{{representative.name}}</td>
+          <td>{{representative.location}}</td>
+          <td>{{representative.activities}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+</section>

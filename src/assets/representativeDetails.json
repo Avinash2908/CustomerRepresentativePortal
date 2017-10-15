@@ -1,0 +1,30 @@
+[{
+    "name" : "Avinash",
+    "location" : "Chennai",
+    "activities" : ["Play Cricket", "Coding", "Car driving"]
+  },
+  {
+    "name" : "Surya",
+    "location" : "Hyderabad",
+    "activities" : ["Car driving", "Coding", "Travelling"]
+  },
+  {
+    "name" : "Santosh",
+    "location" : "Bangalore",
+    "activities" : ["Play Cricket", "Coding", "Tours", "Travelling"]
+  },
+  {
+    "name" : "Avinash",
+    "location" : "Chennai",
+    "activities" : ["Play Cricket", "Coding", "Travelling"]
+  },
+  {
+    "name" : "Avinash",
+    "location" : "Hyderabad",
+    "activities" : ["Play Cricket", "Travelling"]
+  },
+  {
+    "name" : "Vikranth",
+    "location" : "Chennai",
+    "activities" : ["Play volleyball", "Field Engineer", "Workouts", "Foodie", "Car driving"]
+  }]
